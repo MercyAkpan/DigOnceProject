@@ -1,7 +1,6 @@
 # 🛣️ Dig-Once Infrastructure Coordination System
-#### &emsp; License
-
-This project is licensed under the [MIT License](LICENSE) - see the LICENSE file for details.
+#### &emsp;&emsp;License
+&emsp;&emsp;&emsp;&emsp;This project is licensed under the [MIT License](LICENSE) - see the LICENSE file for details.
 
 ## 📌 Project Overview
 The **Dig-Once Infrastructure Coordination System** is a **C# application** that demonstrates the practical implementation of **Composite** and **Iterator** design patterns to solve real-world infrastructure coordination challenges.  
