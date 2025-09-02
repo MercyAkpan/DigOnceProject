@@ -160,6 +160,7 @@ project.ExecuteCableInstallation();
 
 ```
 ## 📁 Project Structure
+```
 DigOnceProject/
 ├── src/
 │   ├── Composites/
@@ -175,7 +176,7 @@ DigOnceProject/
 ├── tests/
 ├── docs/
 └── README.md
-
+```
 ### 🎓 Learning Outcomes
 This project demonstrates:
 
