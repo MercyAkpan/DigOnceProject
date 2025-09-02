@@ -58,7 +58,7 @@ Project Root
 ## SAMPLE OUTPUT
  UMUAHIA-ABA EXPRESSWAY DIG-ONCE PROJECT
 ==========================================
-
+```
 === STARTING PROJECT ANALYSIS ===
 
 === PROJECT STRUCTURE ANALYSIS {DRAFT PLAN} ===
@@ -129,7 +129,7 @@ Spectranet: Cable installation completed!
 6 ISPs now have shared duct access!
 Estimated savings: NGN60,000,000 (vs individual excavations)
 ==============================================
-
+```
 ## 🛠️ Installation & Usage
 ### Prerequisites
 .NET 6.0 or higher
@@ -228,12 +228,15 @@ Share alternative solutions
 How to Contribute
 # Fork the repository
 # Create a feature branch
-`` git checkout -b feature/amazing-pattern```
+`` git checkout -b feature/amazing-pattern
+```
 
 # Commit your changes
-``` git commit -m 'Add amazing design pattern'```
+``` git commit -m 'Add amazing design pattern'
+```
 
 # Push to your branch
-``` git push origin feature/amazing-pattern ```
+``` git push origin feature/amazing-pattern 
+```
 
 # Open a Pull Request
