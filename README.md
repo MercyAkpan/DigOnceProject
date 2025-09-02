@@ -225,18 +225,18 @@ Propose feature enhancements
 
 Share alternative solutions
 
-How to Contribute
-# Fork the repository
-# Create a feature branch
+### How to Contribute
+Fork the repository
+ Create a feature branch
 `` git checkout -b feature/amazing-pattern
-```
+``
 
 # Commit your changes
-``` git commit -m 'Add amazing design pattern'
-```
+`` git commit -m 'Add amazing design pattern'
+``
 
 # Push to your branch
-``` git push origin feature/amazing-pattern 
-```
+`` git push origin feature/amazing-pattern 
+``
 
 # Open a Pull Request
