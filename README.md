@@ -54,8 +54,8 @@ Project Root
 └── Cable Installation Phase
     ├── ISP Cable Tasks (Dynamic)
     └── Power Cable Tasks (Dynamic)
-
-
+```
+## SAMPLE OUTPUT
  UMUAHIA-ABA EXPRESSWAY DIG-ONCE PROJECT
 ==========================================
 
@@ -130,25 +130,24 @@ Spectranet: Cable installation completed!
 Estimated savings: NGN60,000,000 (vs individual excavations)
 ==============================================
 
-🛠️ Installation & Usage
-Prerequisites
+## 🛠️ Installation & Usage
+### Prerequisites
 .NET 6.0 or higher
-
 Visual Studio 2022 or VS Code
-
 C# 10.0+ support
 
-Quick Start
+## Quick Start
 Clone the repository:
-
+```
 git clone https://github.com/yourusername/dig-once-project.git
 cd dig-once-project
-Build and run:
-
+```
+### Build and run:
+```
 dotnet build
 dotnet run
-Example usage:
 
+// Example usage:
 var project = new DigOnceExpresswayProject();
 
 // Add ISPs with budget and permit status
@@ -158,26 +157,26 @@ project.AddISP(new ISP("Airtel Networks", 12000000, false, "", "Major ISP")); //
 // Process applications and coordinate
 project.ProcessISPApplications();
 project.ExecuteCableInstallation();
-📁 Project Structure
+
+```
+## 📁 Project Structure
 DigOnceProject/
 ├── src/
-│   ├── Composite/
-│   │   ├── IProjectComponent.cs
-│   │   ├── ConstructionTask.cs
-│   │   └── ConstructionPhase.cs
+│   ├── Composites/
+│   │   ├── ISPElement.cs
+│   │   ├── ProjectPhase.cs
+│   │   └── ProjectTask.cs
 │   ├── Iterator/
-│   │   ├── IISPIterator.cs
-│   │   ├── PermitHolderIterator.cs
-│   │   ├── BudgetPriorityIterator.cs
-│   │   └── CableInstallationIterator.cs
-│   ├── Models/
-│   │   ├── ISP.cs
-│   │   └── ISPCollection.cs
-│   └── DigOnceExpresswayProject.cs
+│   │   └── ProjectCompositeIterator.cs
+│   ├── Interfaces/
+│   │   └── IProjectElement.cs
+│   ├── MainProjectSystem/
+│   │   └── DigOnceProjectSystem.cs
 ├── tests/
 ├── docs/
 └── README.md
-🎓 Learning Outcomes
+
+### 🎓 Learning Outcomes
 This project demonstrates:
 
 Composite Pattern – Managing complex hierarchical structures
@@ -188,7 +187,7 @@ Real-world Problem Solving – Applying patterns to infrastructure challenges
 
 SOLID Principles – Clean code architecture & separation of concerns
 
-🔄 Future Improvements
+### 🔄 Future Improvements
 🚀 Planned Design Patterns
 Strategy Pattern – Cost calculation strategies
 
@@ -200,7 +199,7 @@ Command Pattern – Undo/redo functionality
 
 State Pattern – Project lifecycle management
 
-🌟 Feature Roadmap
+### 🌟 Feature Roadmap
 Database Integration (persist data)
 
 REST API (project management endpoints)
@@ -213,7 +212,7 @@ Multi-Project Support
 
 Integration Testing
 
-🤝 Contributing
+### 🤝 Contributing
 This is a learning project, but contributions and suggestions are welcome!
 
 Ways to contribute:
@@ -229,12 +228,12 @@ Share alternative solutions
 How to Contribute
 # Fork the repository
 # Create a feature branch
-git checkout -b feature/amazing-pattern
+`` git checkout -b feature/amazing-pattern```
 
 # Commit your changes
-git commit -m 'Add amazing design pattern'
+``` git commit -m 'Add amazing design pattern'```
 
 # Push to your branch
-git push origin feature/amazing-pattern
+``` git push origin feature/amazing-pattern ```
 
 # Open a Pull Request
