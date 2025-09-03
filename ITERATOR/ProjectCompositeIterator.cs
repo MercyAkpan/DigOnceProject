@@ -15,6 +15,8 @@ namespace DESIGNPATTERNPROJECT.ITERATOR
 
         public ProjectCompositeIterator(IProjectElement root)
         {
+            // Stack created to store iterators over collections in each component 
+            // whether ProjectPhase, ProjectTask, ISPElement.
             stack = new Stack<IEnumerator<IProjectElement>>();
             // Start with root's children
             stack.Push(root.CreateIterator());
@@ -27,6 +29,7 @@ namespace DESIGNPATTERNPROJECT.ITERATOR
         {
             while (stack.Count > 0)
             {
+                // Iterator always points to item at the top of the stack.
                 IEnumerator<IProjectElement> iterator = stack.Peek();
 
                 if (!iterator.MoveNext())
