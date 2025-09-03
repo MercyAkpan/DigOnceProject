@@ -29,7 +29,7 @@ namespace DESIGNPATTERNPROJECT.COMPOSITES
 
         public decimal GetCost() => components.Sum(c => c.GetCost());
         public string GetDescription() => $"{description} (Contains {components.Count} components)";
-        //TODO: How is this used? How can it be used?
+        //TODO: How is this DisplayInfo used? How can it be used?
         public void DisplayInfo(int depth = 0)
         {
             string indent = new string(' ', depth);
@@ -40,6 +40,7 @@ namespace DESIGNPATTERNPROJECT.COMPOSITES
         // Returns iterator for all child components
         public IEnumerator<IProjectElement> CreateIterator()
         {
+            //This returns an iterator over components.
             return components.GetEnumerator(); //Returns read-only access
         }
 
