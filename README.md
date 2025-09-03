@@ -2,6 +2,25 @@
 #### &emsp;&emsp;License
 &emsp;&emsp;&emsp;&emsp;This project is licensed under the [MIT License](LICENSE) - see the LICENSE file for details.
 
+---
+### Developer Notes
+
+- You may notice some `TODO:` or `FIXME:` comments in the source code.  
+- These are **personal reminders** I use during development to track tasks, improvements, or related lines of code.  
+- They are not bugs in the program itself, but pointers for future refinement.  
+- Example:
+  ```csharp
+  // TODO: Improve error handling here
+
+
+### About Code Comments
+
+The code contains inline comments such as `TODO:` or `FIXME:`.  
+These are **planned improvements or reminders** left intentionally to indicate where enhancements or future features may be added.  
+They do not affect the correctness of the current implementation.
+---
+
+
 ## 📌 Project Overview
 The **Dig-Once Infrastructure Coordination System** is a **C# application** that demonstrates the practical implementation of **Composite** and **Iterator** design patterns to solve real-world infrastructure coordination challenges.  
 
