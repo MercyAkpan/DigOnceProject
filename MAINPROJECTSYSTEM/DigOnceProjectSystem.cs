@@ -93,6 +93,8 @@ namespace DESIGNPATTERNPROJECT.MAINPROJECTSYSTEM
             Console.WriteLine($"Description: {rootProject.GetDescription()}\n");
 
             // Use our custom CompositeIterator to traverse the entire project
+            // TODO: Why is a custom iterator created only for the root node, then it has a stack to house all child iterators
+            // Why doesnt it simply createIterator like the others, even though the same occurs in the ProjectCompositeIterator's constructor
             using (var iterator = new ProjectCompositeIterator(rootProject))
             {
                 Console.WriteLine("Iterating through all project components:\n");
@@ -102,14 +104,15 @@ namespace DESIGNPATTERNPROJECT.MAINPROJECTSYSTEM
                     var element = iterator.Current;
 
                     // Calculate total cost as we iterate
-                    totalProjectCost += element.GetCost();
+                    decimal elementCost = element.GetCost();
+                    totalProjectCost += elementCost;
 
                     // Display component info
                     Console.WriteLine($"Component: {element.Name}");
                     if (!(element is ISPElement isp))
-                        Console.WriteLine($"Cost: NGN{element.GetCost():N0}");
+                        Console.WriteLine($"Cost: NGN{elementCost :N0}");
                     else
-                        Console.WriteLine($"Budget: NGN{element.GetCost():N0}");
+                        Console.WriteLine($"Budget: NGN{elementCost :N0}");
                     Console.WriteLine($"Description: {element.GetDescription()}");
                     Console.WriteLine();
                 }
