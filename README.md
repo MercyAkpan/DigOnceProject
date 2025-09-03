@@ -4,21 +4,14 @@
 
 ---
 ### Developer Notes
+##### About Code Comments
 
-- You may notice some `TODO:` or `FIXME:` comments in the source code.  
-- These are **personal reminders** I use during development to track tasks, improvements, or related lines of code.  
-- They are not bugs in the program itself, but pointers for future refinement.  
+- Ocassionally this project code would contain inline comments such as `TODO:` or `FIXME:`.  
+- These are **planned improvements or reminders** left intentionally to indicate where enhancements or future features may be added.  
+- They do not affect the correctness of the current implementation.
 - Example:
   ```csharp
   // TODO: Improve error handling here
-
-
-### About Code Comments
-
-The code contains inline comments such as `TODO:` or `FIXME:`.  
-These are **planned improvements or reminders** left intentionally to indicate where enhancements or future features may be added.  
-They do not affect the correctness of the current implementation.
-
 ---
 
 
