@@ -31,13 +31,15 @@ namespace DESIGNPATTERNPROJECT.ITERATOR
             {
                 // Iterator always points to item at the top of the stack.
                 IEnumerator<IProjectElement> iterator = stack.Peek();
-
+                // MoveNext() will be false when called by a ProjectTask iterator.
+                // Else MoveNext() will move to next element in collection and return true.
                 if (!iterator.MoveNext())
                 {
-                    stack.Pop(); // This iterator is exhausted
+                // This iterator is exhausted
+                    stack.Pop(); 
                     continue;
                 }
-                //This points to current element iterator points to in the collection.
+                //This points to current element the iterator points to in the collection.
                 current = iterator.Current;
 
                 // This iterates over the current element's collection.
