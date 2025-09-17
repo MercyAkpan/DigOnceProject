@@ -1,12 +1,12 @@
-﻿using DESIGNPATTERNPROJECT.COMPOSITES;
-using DESIGNPATTERNPROJECT.ITERATOR;
+﻿using DesignPatternProject.Composites;
+using DesignPatternProject.Iterator;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-//TODO: Safely rename namespaces without all caps.
-namespace DESIGNPATTERNPROJECT.MAINPROJECTSYSTEM
+
+namespace DesignPatternProject.MainProjectSystem
 {
     public class DigOnceProjectSystem
     {
@@ -14,6 +14,9 @@ namespace DESIGNPATTERNPROJECT.MAINPROJECTSYSTEM
         //Make eligibleISPs 'ISPs'? cause they havent be declared eligible.
         private ProjectPhase rootProject;
         private ProjectPhase ispSection;
+        /// <summary>
+        /// To store eligible ISps.
+        /// </summary>
         private List<ISPElement> eligibleISPs;
         private decimal totalProjectCost;
         private decimal sharedDuctCost;
