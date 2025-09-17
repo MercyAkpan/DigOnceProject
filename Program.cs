@@ -1,12 +1,12 @@
-﻿using DESIGNPATTERNPROJECT.COMPOSITES;
-using DESIGNPATTERNPROJECT.MAINPROJECTSYSTEM;
+﻿using DesignPatternProject.Composites;
+using DesignPatternProject.MainProjectSystem;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DESIGNPATTERNPROJECT
+namespace DesignPatternProject
 {
     internal class Program
     {
