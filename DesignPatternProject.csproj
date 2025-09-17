@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{DF4B253A-EC7F-4235-88D1-8751769A59A3}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>DESIGNPATTERNPROJECT</RootNamespace>
-    <AssemblyName>DESIGNPATTERNPROJECT</AssemblyName>
+    <RootNamespace>DesignPatternProject</RootNamespace>
+    <AssemblyName>DesignPatternProject</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,12 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="COMPOSITES\ISPElement.cs" />
-    <Compile Include="COMPOSITES\ProjectPhase.cs" />
-    <Compile Include="COMPOSITES\ProjectTask.cs" />
-    <Compile Include="INTERFACES\IProjectElement.cs" />
-    <Compile Include="ITERATOR\ProjectCompositeIterator.cs" />
-    <Compile Include="MAINPROJECTSYSTEM\DigOnceProjectSystem.cs" />
+    <Compile Include="Composites\ISPElement.cs" />
+    <Compile Include="Composites\ProjectPhase.cs" />
+    <Compile Include="Composites\ProjectTask.cs" />
+    <Compile Include="Interfaces\IProjectElement.cs" />
+    <Compile Include="Iterator\ProjectCompositeIterator.cs" />
+    <Compile Include="MainProjectSystem\DigOnceProjectSystem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="tests\DigOnceProjectSystemTests.cs" />

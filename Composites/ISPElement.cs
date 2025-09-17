@@ -3,9 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DesignPatternProject.Interfaces;
 
-namespace DESIGNPATTERNPROJECT.COMPOSITES
+namespace DesignPatternProject.Composites
 {
+    /// <summary>
+    /// Leaf type of the Composite Pattern
+    /// </summary>
     public class ISPElement : IProjectElement
     {
         public string Name { get; private set; }
