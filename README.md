@@ -247,12 +247,12 @@ Fork the repository
 `` git checkout -b feature/amazing-pattern
 ``
 
-# Commit your changes
+#### Commit your changes
 `` git commit -m 'Add amazing design pattern'
 ``
 
-# Push to your branch
+#### Push to your branch
 `` git push origin feature/amazing-pattern 
 ``
 
-# Open a Pull Request
+#### Open a Pull Request
