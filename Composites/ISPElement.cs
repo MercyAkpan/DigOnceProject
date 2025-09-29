@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DesignPatternProject.Interfaces;
+using DesignPatternProject.Utilities;
 
 namespace DesignPatternProject.Composites
 {
@@ -19,6 +20,17 @@ namespace DesignPatternProject.Composites
         public bool IsEligible { get; private set; }
         public int FreeAccessYears { get; private set; }
         public string CableStatus { get; private set; } = "Not Started";
+        ///<summary>
+        /// This is the unique id of the Stakeholder.
+        /// </summary>
+        public string Id { get; }
+        /// <summary>
+        /// This initializes the ISP Element in the Composite tree.
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="budget"></param>
+        /// <param name="hasPermit"></param>
+        /// <param name="permitNumber"></param>
 
         public ISPElement(string name, decimal budget, bool hasPermit, string permitNumber)
         {
@@ -28,6 +40,7 @@ namespace DesignPatternProject.Composites
             PermitNumber = permitNumber;
             IsEligible = false;
             FreeAccessYears = 0;
+            Id = IdGenerator.GenerateUniqueID();
         }
 
         public decimal GetCost() => Budget;
