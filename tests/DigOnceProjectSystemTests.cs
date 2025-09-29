@@ -84,5 +84,18 @@ namespace DesignPatternProject.tests
 //     public class DigOnceProjectSystemTests
 //    {
 
-//    }
-//}
+            var stakeholder = factory.CreateStakeholder(Stakeholderdata);
+            ClassicAssert.NotNull(stakeholder);
+        }
+        [Test]
+        ///<summary>
+        /// This tests if a Unique Id is created for each Project .
+        /// </summary>
+        public void UniqueIdCreation()
+        {
+            var stakeholder1 = factory.CreateStakeholder(Stakeholderdata);
+            var stakeholder2 = factory.CreateStakeholder(Stakeholderdata);
+            ClassicAssert.AreNotEqual(stakeholder1.Id, stakeholder2.Id);
+        }
+    }
+}
