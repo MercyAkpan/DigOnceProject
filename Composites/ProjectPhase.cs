@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DesignPatternProject.Interfaces;
+using DesignPatternProject.Utilities;
 
 namespace DesignPatternProject.Composites
 {
@@ -14,13 +15,22 @@ namespace DesignPatternProject.Composites
         public string Name { get; private set; }
         private List<IProjectElement> components;
         private string description;
-
+        ///<summary>
+        /// This is the unique id of the Project Phase element.
+        /// </summary>
+        public string Id { get; }
+        /// <summary>
+        /// This initializes the ProjectPhase in the Composite tree.
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="description"></param>
         public ProjectPhase(string name, string description)
         {
             Name = name;
             //TODO: why this? why not simply 'description = description'?
             this.description = description;
             components = new List<IProjectElement>();
+            Id = IdGenerator.GenerateUniqueID();
         }
 
         public void AddComponent(IProjectElement component)
@@ -44,7 +54,7 @@ namespace DesignPatternProject.Composites
             //This returns an iterator over components.
             return components.GetEnumerator(); //Returns read-only access
         }
-
+        //TODO: Verify why this function needed?
         public List<IProjectElement> GetComponents() => components;
     }
 
