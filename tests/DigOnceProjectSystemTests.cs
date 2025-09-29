@@ -79,10 +79,18 @@ namespace DesignPatternProject.tests
         public void CreateProjectTask()
         {
 
-//namespace DesignPatternProject.tests
-//{
-//     public class DigOnceProjectSystemTests
-//    {
+            var projectTask = factory.CreateProjectTask(taskData);
+            ClassicAssert.NotNull(projectTask);
+        }
+        [Test]
+        ///<summary>
+        /// This tests the CreateStakeholder method of the DigOnceComponentFactory class.
+        /// </summary>
+        /// <remarks>
+        /// Should create a Stakeholder element in the Composite tree.
+        /// </remarks>
+        public void CreateStakeholder()
+        {
 
             var stakeholder = factory.CreateStakeholder(Stakeholderdata);
             ClassicAssert.NotNull(stakeholder);
