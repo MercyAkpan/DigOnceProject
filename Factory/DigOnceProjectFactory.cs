@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using DesignPatternProject.Interfaces;
 using DesignPatternProject.Composites;
+using DesignPatternProject.Utilities;
 
 namespace DesignPatternProject.Factory
 {
@@ -56,6 +57,12 @@ namespace DesignPatternProject.Factory
         /// <param name="parent">Parent element to add to</param >
         /// <param name="child">Element to the added</param>
         public void AddComponent(IProjectElement parent, IProjectElement child)
-        { }
+        {
+            ///<summary>
+            /// Checks if the parent is valid.
+            /// </summary>
+            ValidityChecks.EnsureOfType<IProjectPhase>(parent);
+            //{Pause}
+            }
+        }
     }
-}
