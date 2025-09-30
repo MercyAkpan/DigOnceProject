@@ -6,3 +6,5 @@
 *.cache
 bin/
 obj/
+packages/
+packages.config
